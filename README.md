@@ -11,14 +11,14 @@ Creates a table named people
 Inserts a row
 Reads and prints that row
 This project is ideal for Beginners learning Docker, DevOps, or QA Automation.
-🏗️ Project Structure
+Project Structure
 dockerized-postgres-app/
 │── docker-compose.yml
 │── app/
 │     ├── app.py
 │     ├── requirements.txt
 │     └── Dockerfile
-🚀 How It Works
+How It Works
 1. PostgreSQL Service
 The db service runs PostgreSQL with:
 Database: mydb
@@ -31,7 +31,7 @@ Builds from the Dockerfile inside /app
 Installs dependencies (psycopg2-binary)
 Runs the Python script app.py
 Connects to PostgreSQL using environment variables
-🐳 Docker Compose Configuration
+Docker Compose Configuration
 Your docker-compose.yml defines two services:
 services:
   db:
@@ -63,8 +63,7 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
 volumes:
-  pg-data:
-🧪 Python Script Behavior
+  pg-data: Python Script Behavior
 Your app.py:
 Waits until PostgreSQL is ready
 Connects to the database
@@ -75,7 +74,7 @@ Example output:
 Postgres is ready!
 Inserted ID: 1
 Row: (1, 'Docker User')
-▶️ How to Run the Project
+How to Run the Project
 1. Navigate to project folder
 cd dockerized-postgres-app
 2. Start Docker Compose
@@ -85,31 +84,31 @@ PostgreSQL initializes
 Python waits for DB
 Python app inserts & reads data
 Container exits with code 0 (success)
-🛑 Stopping the Project
+Stopping the Project
 Press:
 CTRL + C
 Then run:
 docker compose down
 To remove database data too:
 docker compose down -v
-📦 Technologies Used
+Technologies Used
 Python 3.10
 PostgreSQL 15
 Docker
 Docker Compose
-🌱 Learning Outcomes
+Learning Outcomes
 By completing this project, you learned:
-✔ How to write a Python app that connects to PostgreSQL
-✔ How to create a Dockerfile
-✔ How to use Docker Compose for multi-container apps
-✔ How to use health checks
-✔ How to automate app startup dependencies
-✔ How containers communicate over a Docker network
-🚀 Next Steps (Optional Enhancements)
+ How to write a Python app that connects to PostgreSQL
+ How to create a Dockerfile
+ How to use Docker Compose for multi-container apps
+ How to use health checks
+ How to automate app startup dependencies
+ How containers communicate over a Docker network
+ Next Steps (Optional Enhancements)
 You can extend this project by adding:
 Flask API to insert/read data
 pgAdmin for GUI access
 Environment variables via .env file
 CI/CD pipeline (GitHub Actions)
 Docker Hub image publishing
-Tell me if you want any of these and I’ll help you build it!
+
